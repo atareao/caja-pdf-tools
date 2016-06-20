@@ -20,13 +20,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import gi
-'''
 try:
-    gi.require_version('Nemo', '3.0')
+    gi.require_version('Gtk', '3.0')
+    gi.require_version('Caja', '2.0')
+    gi.require_version('GdkPixbuf', '2.0')
 except Exception as e:
     print(e)
     exit(1)
-'''
 from gi.repository import Caja as FileManager
 from gi.repository import GObject
 from gi.repository import Gtk
