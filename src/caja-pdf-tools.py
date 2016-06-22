@@ -21,7 +21,7 @@
 
 import gi
 try:
-    gi.require_version('Gtk', '3.0')
+    gi.require_version('Gtk', '2.0')
     gi.require_version('Caja', '2.0')
     gi.require_version('GdkPixbuf', '2.0')
 except Exception as e:
@@ -34,7 +34,9 @@ from gi.repository import GdkPixbuf
 import os
 import sys
 try:
-    sys.path.insert(0, '/opt/extras.ubuntu.com/pdf-tools/share/pdf-tools')
+    sys.path.insert(
+        0,
+        '/opt/extras.ubuntu.com/pdf-tools/share/pdf-tools')
     from pdfmanager import PDFManager
     from comun import APPNAME, ICON, VERSION
     import tools
